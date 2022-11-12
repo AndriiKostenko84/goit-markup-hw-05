@@ -5,6 +5,7 @@
   --third-color: #ffffff;
   --icons-color: #afb1b8;
   --indent: 30px;
+  --anim-stand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -86,6 +87,7 @@ ul {
 }
 
 .header-nav-link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -98,6 +100,28 @@ ul {
   color: var(--main-title-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link::after {
+  content: '';
+  position: absolute;
+
+  transform: translateY(28px);
+
+  display: block;
+  width: 97%;
+  height: 4px;
+  border-radius: 2px ;
+  background-color: var(--accent-color);
+  opacity:0;
+
+  transition: opacity var(--anim-stand);
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+  opacity: 1;
+
 }
 
 
