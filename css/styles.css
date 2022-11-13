@@ -314,6 +314,32 @@ ul {
   gap: var(--indent);
 }
 
+
+.work-thumb {
+position: relative;
+
+}
+.work-img {
+  display: block;
+}
+
+.work-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    padding: 27px 107px;  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--third-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
 /* -----Work----- */
 
 /* -----Our Team----- */
