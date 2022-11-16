@@ -113,14 +113,14 @@ ul {
   height: 4px;
   border-radius: 2px ;
   background-color: var(--accent-color);
-  opacity:0;
+  opacity:1;
 
   transition: opacity var(--anim-stand);
 }
 
-.header-nav-link:hover::after,
+/* .header-nav-link:hover::after,
 .header-nav-link:focus::after {
-  opacity: 1;
+  opacity: 1; */
 
 }
 
@@ -732,6 +732,7 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 padding: 0;
+
 width: 30px;
 height: 30px;
 background-color: var(--third-color);
